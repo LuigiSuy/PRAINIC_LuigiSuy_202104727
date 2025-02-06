@@ -36,7 +36,7 @@ Mantener tu computadora limpia es esencial para su correcto funcionamiento y par
 3. Coloca la tapa trasera y atorníllala.
 
 ## Video Tutorial  
-<iframe width="560" height="315" src="https://youtu.be/77tBLtForI4" frameborder="0" allowfullscreen></iframe>
+[![Ver video en YouTube](https://img.youtube.com/vi/77tBLtForI4/0.jpg)](https://youtu.be/77tBLtForI4)
 
 ## Conclusión y Recomendaciones
 - Realiza esta limpieza cada 6 meses o cuando notes sobrecalentamiento.
