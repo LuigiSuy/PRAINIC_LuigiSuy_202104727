@@ -1,1 +1,2 @@
-# PRAINIC_LuigiSuy_202104727
+#  PRACTICAS INICIALES
+Luigi Andersón López Suy - 202104727 - 1S 2025
