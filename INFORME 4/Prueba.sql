@@ -13,12 +13,12 @@ CREATE Table Usuarios(
 CREATE Table Cursos(
     codigo_curso VARCHAR(10) PRIMARY KEY,
     nombre_curso VARCHAR(100) NOT NULL,
-    creditos INT NOT NULL,
+    creditos INT NOT NULL
 );
 
 CREATE Table Catedraticos(
     codigo_catedratico VARCHAR(10) PRIMARY KEY,
-    nombre_completo VARCHAR(100) NOT NULL,
+    nombre_completo VARCHAR(100) NOT NULL
 );
 
 CREATE Table Publicaciones(
@@ -30,7 +30,7 @@ CREATE Table Publicaciones(
     fecha_publicacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     tipo ENUM('Curso', 'Catedratico') NOT NULL,
     FOREIGN KEY (id_curso) REFERENCES Cursos(codigo_curso),
-    FOREIGN KEY (codigo_catedratico) REFERENCES Catedraticos(codigo_catedratico),
+    FOREIGN KEY (id_catedratico) REFERENCES Catedraticos(codigo_catedratico),
     FOREIGN KEY (registro_academico) REFERENCES Usuarios(registro_academico)
 );
 
@@ -58,4 +58,16 @@ CREATE Table Cursos_aprobados(
     PRIMARY KEY (registro_academico, id_curso),
     FOREIGN KEY (registro_academico) REFERENCES Usuarios(registro_academico),
     FOREIGN KEY (id_curso) REFERENCES Cursos(codigo_curso)
-)
+);
+
+-- Insertar cursos
+INSERT INTO Cursos (codigo_curso, nombre_curso, creditos) VALUES
+("SIS101", "Introducción a Sistemas", 4),
+("SIS102", "Estructuras de Datos", 5),
+("SIS103", "Bases de Datos", 4);
+
+-- Insertar catedráticos
+INSERT INTO Catedraticos (codigo_catedratico, nombre_completo) VALUES
+("CAT001", "Juan Pérez"),
+("CAT002", "Ana Gómez"),
+("CAT003", "Carlos Rodríguez");
