@@ -14,3 +14,5 @@ const pool = mysql.createPool({
 });
 
 export default pool;
+
+//se usa db.js para la conexion a la base de datos, se usa pool para la conexion a la base de datos, se usa dotenv para cargar las variables de entorno, se usa mysql2/promise para la conexion a la base de datos, se exporta pool para poder usarlo en otros archivos
