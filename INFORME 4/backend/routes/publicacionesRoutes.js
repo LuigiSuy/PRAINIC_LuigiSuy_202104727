@@ -1,5 +1,5 @@
 import express from "express";
-import { crearPublicacion, obtenerPublicaciones, obtenerPublicacionesPorTipo } from "../models/PublicacionModel.js";
+import { crearPublicacion, obtenerPublicaciones, obtenerPublicacionesPorTipo } from "../models/PublicacionModel.js"; // Importar funciones de modelo
 
 const router = express.Router();
 

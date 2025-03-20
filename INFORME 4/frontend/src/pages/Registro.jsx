@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "../styles.css"; // Importar los estilos
 
 const Registro = () => {
   const [usuario, setUsuario] = useState({
@@ -29,16 +30,18 @@ const Registro = () => {
   };
 
   return (
-    <div>
-      <h2>Registro</h2>
-      <form onSubmit={handleRegister}>
-        <input type="text" name="registro_academico" placeholder="Registro Académico" onChange={handleChange} required />
-        <input type="text" name="nombres" placeholder="Nombres" onChange={handleChange} required />
-        <input type="text" name="apellidos" placeholder="Apellidos" onChange={handleChange} required />
-        <input type="email" name="correo" placeholder="Correo Electrónico" onChange={handleChange} required />
-        <input type="password" name="password" placeholder="Contraseña" onChange={handleChange} required />
-        <button type="submit">Registrarse</button>
-      </form>
+    <div className="container">
+      <div className="register-container">
+        <h2 className="register-title">Registro</h2>
+        <form onSubmit={handleRegister}>
+          <input type="text" name="registro_academico" placeholder="Registro Académico" className="input-field" onChange={handleChange} required />
+          <input type="text" name="nombres" placeholder="Nombres" className="input-field" onChange={handleChange} required />
+          <input type="text" name="apellidos" placeholder="Apellidos" className="input-field" onChange={handleChange} required />
+          <input type="email" name="correo" placeholder="Correo Electrónico" className="input-field" onChange={handleChange} required />
+          <input type="password" name="password" placeholder="Contraseña" className="input-field" onChange={handleChange} required />
+          <button type="submit" className="button-primary">Registrarse</button>
+        </form>
+      </div>
     </div>
   );
 };

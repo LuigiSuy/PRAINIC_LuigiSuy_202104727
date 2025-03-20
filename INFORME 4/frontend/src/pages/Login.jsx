@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "../styles.css"; // Importar los estilos
 
 const Login = () => {
   const [registro_academico, setRegistro] = useState("");
@@ -20,15 +21,32 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h2>Iniciar Sesión</h2>
-      <form onSubmit={handleLogin}>
-        <input type="text" placeholder="Registro Académico" value={registro_academico} onChange={(e) => setRegistro(e.target.value)} required />
-        <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        <button type="submit">Ingresar</button>
-      </form>
+    <div className="container">
+      <div className="login-container">
+        <h2 className="login-title">Iniciar Sesión</h2>
+        <form onSubmit={handleLogin}>
+          <input
+            type="text"
+            placeholder="Registro Académico"
+            className="input-field"
+            value={registro_academico}
+            onChange={(e) => setRegistro(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type="submit" className="button-primary">Ingresar</button>
+        </form>
+      </div>
     </div>
   );
 };
 
 export default Login;
+// Compare this snippet from INFORME%204/frontend/src/pages/Login.jsx:

@@ -1,3 +1,4 @@
+/*PAGINA INICIAL*/
 body{
     height: 100%;
     margin: 0;
@@ -50,4 +51,139 @@ body{
     background-color: white;
     color: #3b82f6;
   }
+  
+/*PAGINA DEL LOGIN*/
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .button-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .button-primary:hover {
+    background-color: #2563eb;
+  }
+
+
+/*PAGINA DE REGISTRO*/
+.register-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .register-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .button-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #9333ea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .button-primary:hover {
+    background-color: #7e22ce;
+  }
+
+/* ESTILOS PARA PUBLICACIONES */
+.publicaciones-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .publicacion {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .publicacion h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .publicacion p {
+    font-size: 1rem;
+  }
+  
+  .fecha {
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    margin-top: 5px;
+  }
+  
+  .button-secondary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #10b981;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+  }
+  
+  .button-secondary:hove
   
