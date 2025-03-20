@@ -1,9 +1,9 @@
 import express from "express";
 import { crearComentario, obtenerComentariosPorPublicacion } from "../models/ComentarioModel.js";
 
-const router = express.Router(); // Crear un router
+const router = express.Router();
 
-// Obtener comentarios de una publicación específica
+// Obtener comentarios de una publicación
 router.get("/:id_publicacion", async (req, res) => {
   try {
     const comentarios = await obtenerComentariosPorPublicacion(req.params.id_publicacion);
@@ -13,7 +13,7 @@ router.get("/:id_publicacion", async (req, res) => {
   }
 });
 
-// Crear un comentario
+// Agregar un comentario a una publicación
 router.post("/", async (req, res) => {
   try {
     const result = await crearComentario(req.body);

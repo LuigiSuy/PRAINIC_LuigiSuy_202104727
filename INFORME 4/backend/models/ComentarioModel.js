@@ -1,6 +1,6 @@
 import pool from "../db.js";
 
-// Crear un nuevo comentario
+// Crear un comentario
 export const crearComentario = async (comentario) => {
   const { id_publicacion, registro_academico, comentario_texto } = comentario;
 
@@ -13,7 +13,7 @@ export const crearComentario = async (comentario) => {
   return result;
 };
 
-// Obtener comentarios de una publicación
+// Obtener comentarios por publicación
 export const obtenerComentariosPorPublicacion = async (id_publicacion) => {
   const [rows] = await pool.query("SELECT * FROM Comentarios WHERE id_publicacion = ? ORDER BY fecha_comentario ASC", [id_publicacion]);
   return rows;
